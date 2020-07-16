@@ -20,14 +20,14 @@ class Home extends Component {
     }
     
     getUser = () => {
-        fetch('http://fullybooked-app-api.herokuapp.com/users')
+        fetch('https://git.heroku.com/fullybooked-app-api.git/users')
             .then(response => response.json())
             .then(json => this.setState({user: json}))
             .catch(error => console.log(error))
     }
     
     getBookClubs = () => {
-        fetch('http://fullbooked-app-api.herokuapp.com/bookclubs')
+        fetch('https://git.heroku.com/fullybooked-app-api.git/bookclubs')
         .then(response => response.json())
         .then(json => this.setState({bookclubs: json}))
         .catch(error => console.log(error))
