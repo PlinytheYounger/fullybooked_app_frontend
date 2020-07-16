@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+
+
+/* HEADER STYLING */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    .title {
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .login-div {
+        form {
+            padding: 10px;
+            input {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+/* MAIN HOME DIV */
+.mainHomeDiv {
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CREATE A BOOKCLUB FORM */
+.bookclubName {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+        label, input, h2 {
+            align-self: flex-start;
+            padding: 10px;
+        }
+}
+
+/* List of bookclubs */
+.userBookclubs {
+    margin-right: 100px;
+    padding-right: 35px;
+    background-color: white;
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        li {
+            list-style: none;
+            .clubName {
+                color: darkolivegreen;
+                font-style: bold;
+            }
+        }
+    }
+}
+
+/* BOOKCLUB COMPONENT */
+.bookclubContainer {
+    background-image: url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    .bookclubTitle {
+        background-color: white;
+        margin-top: 30px;
+        padding-bottom: 15px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .bookclubBody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .bookclubUsersEvents {
+            background-color: white;
+            margin-left: 25px;
+            padding: 20px;
+            min-height: 600px;
+            min-width: 300px;
+            max-width: 500px;
+            ul {
+                li {
+                    list-style: none;
+                    font-size: 18px;
+                }
+            }
+        }
+        .bookclubPosts {
+            background-color: white;
+            margin-right: 25px;
+            min-width: 300px;
+            max-width: 500px;
+            min-height: 600px;
+            padding: 20px;
+            h2 {
+                text-align: center;
+            }
+            ul {
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .deleteButton {
+        text-align: center;
+        button {
+            padding: 20px;
+            font-family: Montserrat, sans-serif;
+            margin-top: 100px;
+        }
+    }
+}
+
+
+
+/* FOOTER STYLING */
+
+footer {
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
